@@ -6,18 +6,29 @@ In addition, we constructed an user-friendly web server based on this framework 
 ## Environment
 * Ubuntu
 * Anaconda
-* python 3.8
+* python 3.7
+
 ## Dependency
 * biopython                     1.79
-* pandas                        1.4.2
-* scikit-learn                  1.1.1
-* scipy                         1.8.1
+* pandas                        1.3.5
+* scikit-learn                  1.0.2
+* scipy                         1.5.4
 * torch                         1.12.1
-* wheel                         0.37.1
-* numpy                         1.23.1
-* tqdm                          4.64.0
+* numpy                         1.21.5
+
+## Create Environment with Conda
+First, create the environment.
+```
+conda create -n Digerati python=3.7
+```
+Then, activate the "Digerati" environment and enter into the workspace.
+```
+conda activate Digerati
+pip install -r requirements.txt
+```
 
 ## Usage
+
 ```
 python predict.py -i {fasta file for predicting} -o {file name of prediction results}
 ```
